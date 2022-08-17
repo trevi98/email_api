@@ -6,8 +6,8 @@
     'Messages' => [
       [
         'From' => [
-          'Email' => "abdullatef.trefi98@gmail.com",
-          'Name' => "Abdullatif"
+          'Email' => $_POST['email'],
+          'Name' => $_POST['name']
         ],
         'To' => [
           [
@@ -15,9 +15,9 @@
             'Name' => "Abdullatif"
           ]
         ],
-        'Subject' => "Greetings from Mailjet.",
+        'Subject' => $_POST['subject'],
         'TextPart' => "My first Mailjet email",
-        'HTMLPart' => "<h3>Dear passenger 1, welcome to <a href='https://www.mailjet.com/'>Mailjet</a>!</h3><br />May the delivery force be with you!",
+        'HTMLPart' => $_POST['message'],
         'CustomID' => "AppGettingStartedTest"
       ]
     ]
