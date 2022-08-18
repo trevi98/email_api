@@ -17,7 +17,7 @@
         ],
         'Subject' => $_POST['subject'],
         'TextPart' => "My first Mailjet email",
-        'HTMLPart' => $_POST['message'],
+        'HTMLPart' => "<h1>Email: {$_POST['email']}</h1><h1>Name: {$_POST['name']}</h1>".$_POST['message'],
         'CustomID' => "AppGettingStartedTest"
       ]
     ]
