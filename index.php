@@ -22,6 +22,12 @@
       ]
     ]
   ];
-  $response = $mj->post(Resources::$Email, ['body' => $body]);
-    var_dump($response->getData());
+  try{
+
+    $response = $mj->post(Resources::$Email, ['body' => $body]);
+    echo ("done");
+  }catch(Exception $e){
+    $res = json_encode($response->getData());
+    echo $res;
+  }
 ?>
