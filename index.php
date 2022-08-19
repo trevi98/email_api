@@ -8,7 +8,7 @@ if(isset($_POST['email'])){
     'Messages' => [
       [
         'From' => [
-          'Email' => $_POST['email'],
+          'Email' => "abdullatef.trefi98@gmail.com",
           'Name' => $_POST['name']
         ],
         'To' => [
